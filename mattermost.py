@@ -26,7 +26,7 @@ postMessage = connection.api['posts'].search_for_team_posts(teamId,options={
 })
 
 #ファイルオープン
-with open(config_ini['OUTPUT']['path'], 'w') as f:
+with open(config_ini['OUTPUT']['path'], 'w' , encoding='utf8') as f:
 
   #検索結果を出力
   for post in postMessage['posts'].values():
